@@ -1,0 +1,29 @@
+---
+import Desktop from "./icons/DesktopIcon.astro";
+import content from "../content";
+import Section from "./Section.astro";
+
+const { skills } = content;
+---
+
+<Section id="skills" Icon={Desktop} title="Habilidades">
+  <ul class="mx-5 mt-2">
+    {
+      skills.map((skill) => (
+        <li class="mb-4">
+          <h5 class="font-medium underline mb-1">{skill.name}:</h5>
+          <div class="ml-4 flex items-center gap-4">
+            {skill.icons.map((item) => (
+              <div class="relative group">
+                <item.icon classes="h-14 w-14 text-black" />
+                <div class="bg-green-900 rounded mx-auto py-1 px-3 text-xs pointer-events-none absolute -top-8 left-0 opacity-0 transition-opacity group-hover:opacity-100">
+                  {item.name}
+                </div>
+              </div>
+            ))}
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</Section>

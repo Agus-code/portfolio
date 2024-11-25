@@ -1,0 +1,27 @@
+---
+import LetterIcon from "./icons/LetterIcon.astro";
+import content from "../content";
+import Section from "./Section.astro";
+
+const { contact } = content;
+---
+
+<Section id="contact" Icon={LetterIcon} title="Contacto">
+  <div class="mx-5 mt-4 flex flex-col gap-4">
+    <div>
+      <p class="text-lg font-medium">Correo</p>
+      <p class="text-zinc-400 text-sm">{contact.email}</p>
+    </div>
+    <div>
+      <a
+        href={contact.linkedin.url}
+        target="_blank"
+        class="underline decoration-2 decoration-green-800 text-lg font-medium"
+        >{contact.linkedin.user}</a
+      >
+    </div>
+    <div>
+      <p class="text-zinc-400 text-sm">{contact.location}</p>
+    </div>
+  </div>
+</Section>
