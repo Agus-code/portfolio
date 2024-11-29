@@ -1,57 +1,59 @@
-<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
-<script>
-  //@ts-ignore
-  window.formbutton =
+<div>
+  <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <script>
     //@ts-ignore
-    window.formbutton ||
-    function () {
+    window.formbutton =
       //@ts-ignore
-      (formbutton.q = formbutton.q || []).push(arguments);
-    };
-  //@ts-ignore
-  formbutton("create", {
-    action: "https://formspree.io/f/xpwzjkqe",
-    title: "¿En que te puedo ayudar?",
-    fields: [
-      {
-        type: "text",
-        label: "Nombre",
-        name: "name",
-        required: true,
-        placeholder: "Ej: Juan",
+      window.formbutton ||
+      function () {
+        //@ts-ignore
+        (formbutton.q = formbutton.q || []).push(arguments);
+      };
+    //@ts-ignore
+    formbutton("create", {
+      action: "https://formspree.io/f/xpwzjkqe",
+      title: "¿En que te puedo ayudar?",
+      fields: [
+        {
+          type: "text",
+          label: "Nombre",
+          name: "name",
+          required: true,
+          placeholder: "Ej: Juan",
+        },
+        {
+          type: "email",
+          label: "Email",
+          name: "email",
+          required: true,
+          placeholder: "Ej: nombre@email.com",
+        },
+        {
+          type: "text",
+          label: "Telefono (opcional)",
+          name: "phone",
+          required: false,
+          placeholder: "Ej: +54 1112345678",
+        },
+        {
+          type: "textarea",
+          label: "Mensaje",
+          name: "message",
+          placeholder: "Dejame tu consulta",
+        },
+        { type: "submit" },
+      ],
+      styles: {
+        title: {
+          backgroundColor: "#185519",
+        },
+        button: {
+          backgroundColor: "#185519",
+        },
+        input: {
+          backgroundColor: "#f8f8f8",
+        },
       },
-      {
-        type: "email",
-        label: "Email",
-        name: "email",
-        required: true,
-        placeholder: "Ej: nombre@email.com",
-      },
-      {
-        type: "text",
-        label: "Telefono (opcional)",
-        name: "phone",
-        required: false,
-        placeholder: "Ej: +54 1112345678",
-      },
-      {
-        type: "textarea",
-        label: "Mensaje",
-        name: "message",
-        placeholder: "Dejame tu consulta",
-      },
-      { type: "submit" },
-    ],
-    styles: {
-      title: {
-        backgroundColor: "#185519",
-      },
-      button: {
-        backgroundColor: "#185519",
-      },
-      input: {
-        backgroundColor: "#f8f8f8",
-      },
-    },
-  });
-</script>
+    });
+  </script>
+</div>

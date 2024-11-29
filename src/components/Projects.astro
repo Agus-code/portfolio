@@ -8,14 +8,11 @@ const { projects } = content;
 ---
 
 <Section id="projects" Icon={StartIcon} title="Projectos">
-  <ol class="mx-5 mt-2 grid md:grid-cols-2 gap-6">
+  <div class="mx-5 mt-2 grid lg:grid-cols-2 gap-8">
     {
       projects.map((project) => (
-        <li class="opacity-45 hover:opacity-100 transition-opacity">
-          <a
-            class="w-full"
-            href={`/projectos/${project.name.replaceAll(" ", "-").toLowerCase()}`}
-          >
+        <article class="lg:opacity-80 lg:hover:opacity-100 transition-opacity">
+ 
             <Image
               src={`/images/projects/${project.image}`}
               class="w-full"
@@ -24,9 +21,9 @@ const { projects } = content;
               height={"100"}
             />
             <div class="py-1">
-              <h5 class="text-lg font-medium mb-1">{project.name}</h5>
+              <h5 class="text-lg font-medium mb-1 text-green-500">{project.name}</h5>
               <div class="overflow-hidden">
-                <p class="leading-none line-clamp-5 text-ellipsis whitespace-pre-wrap">
+                <p class="leading-5 text-pretty line-clamp-5 text-ellipsis">
                   {project.description}
                 </p>
               </div>
@@ -38,9 +35,8 @@ const { projects } = content;
                 ))}
               </ul>
             </div>
-          </a>
-        </li>
+        </article>
       ))
     }
-  </ol>
+  </div>
 </Section>

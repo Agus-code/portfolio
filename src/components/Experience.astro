@@ -7,31 +7,26 @@ const { experience } = content;
 ---
 
 <Section id="experience" title="Experiencia" Icon={WorkIcon}>
-  <ol class="mx-5 mt-2 relative">
-    <div
-      class="hidden sm:block w-0.5 bg-zinc-300 absolute h-full left-1/2 transform -translate-x-1/2"
-    >
-    </div>
+  <ol class="lg:mx-5 mt-2 relative">
     {
       experience.map((exp, i) => {
         const side = i % 2 === 0; // true = rigth | false = left
 
         return (
-          <li class="mt-6 sm:mt-0 sm:mb-12">
+          <li class="lg:mt-6 sm:mt-0 mb-2 lg:mb-12">
             <div class="flex flex-col sm:flex-row items-start">
               {/* EXP BOX */}
-              <div
-                class={`flex ${side ? "justify-start" : "justify-end"} w-full mx-auto items-center`}
-              >
-                <div class={`w-full sm:w-1/2 ${side ? "sm:pr-8" : "sm:pl-8"} `}>
-                  <div
-                    class={`p-4 flex flex-col ${side ? "items-end" : "items-start"} gap-2`}
-                  >
-                    <p class="text-sm">{exp.time}</p>
-                    <p class="text-xl font-semibold">{exp.name}</p>
-                    <p class={`text-xs ${side ? "text-right" : "text-left"}`}>
-                      {exp.descriptions}
-                    </p>
+              <div class="flex justify-start w-full mx-auto items-center">
+                <div class="w-full">
+                  <div class={`p-4 flex gap-2`}>
+                    <div>
+                      <p class="text-xl font-semibold text-green-500">
+                        {exp.job}
+                      </p>
+                      <p class="text-xl font-semibold">{exp.name}</p>
+                      <p class="text-sm text-zinc-300 mb-4">{exp.time}</p>
+                    </div>
+                    <p class={`w-2/3 leading-5 text-zinc-300 `}>{exp.descriptions}</p>
                   </div>
                 </div>
               </div>

@@ -34,40 +34,51 @@ import Vitejs from "./components/icons/skills/Vitejs.astro";
 import Vitest from "./components/icons/skills/Vitest.astro";
 import VScode from "./components/icons/skills/VScode.astro";
 
-
-
 export default {
   title: {
     title: "Agustín Barberis",
     subtitle: "Web Developer",
   },
   about: {
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    cv: "/",
+    cv: "/cv.pdf",
   },
   experience: [
     {
       name: "Freelance",
       time: "Actualmente",
-      job: "Fullstack",
+      job: "Desarrollador de software",
       descriptions:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Desarrollé una página web personalizada para un negocio que facilita la gestión de stock, ventas y clientes. La plataforma permite al usuario llevar un control detallado del inventario, procesar transacciones de ventas de manera eficiente y gestionar la base de datos de clientes de forma organizada. Además, implementé un bot de WhatsApp utilizando Twilio para agilizar la comunicación con los clientes y permitir el agendamiento de turnos de forma automatizada. Utilicé Next.js y Astro para el desarrollo del front-end, asegurando una experiencia rápida y optimizada. Para el back-end, utilicé NestJS junto con MongoDB para gestionar la base de datos de manera eficiente. La solución fue desplegada en AWS, garantizando escalabilidad, seguridad y disponibilidad. Esta implementación ayudó a mejorar la experiencia del usuario, optimizando tanto la gestión interna como la comunicación con los clientes.",
     },
     {
       name: "Lösen",
       time: "2021 - 2024",
-      job: "Fullstack",
+      job: "Desarrollador de software",
       descriptions:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Trabaje con un grupo de desarrolladores especializados, diseñamos, construimos y escalamos productos digitales para el mercado de la posventa automotriz en Latinoamérica. Como desarrollador web, me encargué de trabajar en el desarrollo y mantenimiento de diversas plataformas clave, como sistemas de e-commerce, CMS y generadores de pedidos internos para marcas automotrices. Utilicé tecnologías modernas como Node.js, Express y NestJS en el backend, asegurando aplicaciones robustas y escalables. En el frontend, implementé interfaces interactivas y de alto rendimiento con React y Next.js. Además, participé en la transición a la infraestructura en Google Cloud Platform (GCP) y AWS, mejorando la disponibilidad y escalabilidad de las soluciones. Un aspecto clave de mi rol fue la implementación de microservicios, lo que permitió mejorar la modularidad, integración ágil y facilidad de mantenimiento de los sistemas. Utilicé MongoDB como base de datos no relacional, optimizando el rendimiento y la capacidad de escalado de las aplicaciones.",
     },
   ],
   projects: [
     {
+      name: "Bot de Whatsapp",
+      description:
+        "Automaticion de la atención al cliente respondiendo preguntas frecuentes y facilitando la agenda de turnos.",
+      languajes: [Nodejs, Nestjs],
+      image: "bot_wsp.webp",
+    },
+    {
       name: "Wordle",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Una replica del popular juego de palabras Wordle, en el que los jugadores deben adivinar una palabra de 5 letras en un número limitado de intentos.",
       languajes: [Html5, CSS3, Javascript],
-      image: "example.png",
+      image: "wordle-0.webp",
+    },
+    {
+      name: "Crypto Market",
+      description:
+        "Una aplicación movil desarrollada con React Native que detalla los valores del mercado de las criptomonedas que se obtienen desde una API.",
+      languajes: [React],
+      image: "crypto-0.webp",
     },
   ],
   skills: [
@@ -87,8 +98,8 @@ export default {
       icons: [
         { name: "React", icon: React },
         { name: "Nextjs", icon: Nextjs },
-        {name: "Vitejs", icon: Vitejs},
-        {name: "Astro", icon: Astrodev},
+        { name: "Vitejs", icon: Vitejs },
+        { name: "Astro", icon: Astrodev },
         { name: "Redux", icon: Redux },
       ],
     },
@@ -109,8 +120,8 @@ export default {
         { name: "Github", icon: Github },
         { name: "Eslint", icon: Eslint },
         { name: "Graphql", icon: Graphql },
-        { name: "Docker", icon: Docker},
-      ]
+        { name: "Docker", icon: Docker },
+      ],
     },
     {
       name: "Diseño",
@@ -121,7 +132,7 @@ export default {
         { name: "Materialui", icon: Materialui },
         { name: "Bootstrap", icon: Bootstrap },
         { name: "Figma", icon: Figma },
-      ]
+      ],
     },
     {
       name: "Bases de datos",
@@ -129,14 +140,14 @@ export default {
         { name: "Mongodb", icon: Mongodb },
         { name: "Sequelize", icon: Sequelize },
         { name: "Firebase", icon: Firebase },
-      ]
+      ],
     },
     {
       name: "Cloud",
       icons: [
         { name: "AWS", icon: AWS },
         { name: "Googlecloud", icon: Googlecloud },
-      ]
+      ],
     },
     {
       name: "Testing",
@@ -144,12 +155,12 @@ export default {
         { name: "Jest", icon: Jest },
         { name: "Playwrigth", icon: Playwrigth },
         { name: "Vitest", icon: Vitest },
-
-      ]
-    }
+      ],
+    },
   ],
   contact: {
-    email: "contacto@agusbarberis.com",
+    // email: "contacto@agusbarberis.com",
+    email: 'agustinbarberisdev@gmai.com',
     linkedin: {
       user: "Linkedin/AgustinBarberis",
       url: "https://www.linkedin.com/in/agustin-barberis-356535203/",
