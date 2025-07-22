@@ -9,24 +9,24 @@ const { experience } = content;
 <Section id="experience" title="Experiencia" Icon={WorkIcon}>
   <ol class="lg:mx-5 mt-2 relative">
     {
-      experience.map((exp, i) => {
-        const side = i % 2 === 0; // true = rigth | false = left
-
+      experience.map((exp) => {
         return (
           <li class="lg:mt-6 sm:mt-0 mb-2 lg:mb-12">
             <div class="flex flex-col sm:flex-row items-start">
               {/* EXP BOX */}
-                <div class="w-full">
-                  <div class={`p-4 flex gap-2 flex-col lg:flex-row mb-4 lg:mb-0`}>
-                    <div>
-                      <p class="text-xl font-semibold text-green-500">
-                        {exp.job}
-                      </p>
-                      <p class="text-xl font-semibold">{exp.name}</p>
-                      <p class="text-sm text-zinc-300 mb-4">{exp.time}</p>
-                    </div>
-                    <p class={`w-2/3 leading-5 text-zinc-300 `}>{exp.descriptions}</p>
+              <div class="w-full">
+                <div class={`p-4 flex gap-2 flex-col lg:flex-row mb-4 lg:mb-0`}>
+                  <div>
+                    <p class="text-xl font-semibold text-green-500">
+                      {exp.job}
+                    </p>
+                    <p class="text-xl font-semibold">{exp.name}</p>
+                    <p class="text-sm text-zinc-300 mb-4">{exp.time}</p>
                   </div>
+                  <p class={`md:w-2/3 leading-5 text-zinc-300 `}>
+                    {exp.descriptions}
+                  </p>
+                </div>
               </div>
             </div>
           </li>

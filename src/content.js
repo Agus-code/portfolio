@@ -48,21 +48,28 @@ export default {
       time: "Actualmente",
       job: "Desarrollador de software",
       descriptions:
-        "Desarrollé una página web personalizada para un negocio que facilita la gestión de stock, ventas y clientes. La plataforma permite al usuario llevar un control detallado del inventario, procesar transacciones de ventas de manera eficiente y gestionar la base de datos de clientes de forma organizada. Además, implementé un bot de WhatsApp utilizando Twilio para agilizar la comunicación con los clientes y permitir el agendamiento de turnos de forma automatizada. Utilicé Next.js y Astro para el desarrollo del front-end, asegurando una experiencia rápida y optimizada. Para el back-end, utilicé NestJS junto con MongoDB para gestionar la base de datos de manera eficiente. La solución fue desplegada en AWS, garantizando escalabilidad, seguridad y disponibilidad. Esta implementación ayudó a mejorar la experiencia del usuario, optimizando tanto la gestión interna como la comunicación con los clientes.",
+        "Desarrollé una web personalizada para un negocio que gestiona stock, ventas y clientes. Implementé un bot de WhatsApp con Twilio para agendar turnos y mejorar la comunicación. Usé Next.js y Astro en el frontend, y NestJS con MongoDB en el backend. La solución fue desplegada en AWS, garantizando rendimiento, escalabilidad y disponibilidad.",
+    },
+    {
+      name: "Akuda Ciberseguridad",
+      time: "2025",
+      job: "Desarrollador de software",
+      descriptions:
+        "Me uni al desarrollo de una app para monitorizar eventos en servidores y servicios cloud (AWS, GCP, Azure), integrada con Wazuh para visualizar alertas en tiempo real. Implementación del frontend con React, Vite y Material UI. Uso de Docker para contenedores de Wazuh y la plataforma. Creación de la landing page con Astro y TailwindCSS.",
     },
     {
       name: "Lösen",
       time: "2021 - 2024",
       job: "Desarrollador de software",
       descriptions:
-        "Trabaje con un grupo de desarrolladores especializados, diseñamos, construimos y escalamos productos digitales para el mercado de la posventa automotriz en Latinoamérica. Como desarrollador web, me encargué de trabajar en el desarrollo y mantenimiento de diversas plataformas clave, como sistemas de e-commerce, CMS y generadores de pedidos internos para marcas automotrices. Utilicé tecnologías modernas como Node.js, Express y NestJS en el backend, asegurando aplicaciones robustas y escalables. En el frontend, implementé interfaces interactivas y de alto rendimiento con React y Next.js. Además, participé en la transición a la infraestructura en Google Cloud Platform (GCP) y AWS, mejorando la disponibilidad y escalabilidad de las soluciones. Un aspecto clave de mi rol fue la implementación de microservicios, lo que permitió mejorar la modularidad, integración ágil y facilidad de mantenimiento de los sistemas. Utilicé MongoDB como base de datos no relacional, optimizando el rendimiento y la capacidad de escalado de las aplicaciones.",
+        "Trabajé con un equipo de desarrollo creando y escalando productos digitales para el sector automotriz en Latinoamérica. Participé en el desarrollo de e-commerce, CMS y sistemas de pedidos internos usando Node.js, NestJS, React y Next.js. Implementé microservicios y migramos infraestructuras a GCP y AWS. Usé MongoDB para optimizar el rendimiento y la escalabilidad.",
     },
   ],
   projects: [
     {
       name: "Bot de Whatsapp",
       description:
-        "Automaticion de la atención al cliente respondiendo preguntas frecuentes y facilitando la agenda de turnos.",
+        "Automatización de la atención al cliente respondiendo preguntas frecuentes y facilitando la agenda de turnos.",
       languajes: [Nodejs, Nestjs],
       image: "bot_wsp.webp",
     },
@@ -160,7 +167,7 @@ export default {
   ],
   contact: {
     // email: "contacto@agusbarberis.com",
-    email: 'agustinbarberisdev@gmai.com',
+    email: 'agustinbarberisdev@gmail.com',
     linkedin: {
       user: "Linkedin/AgustinBarberis",
       url: "https://www.linkedin.com/in/agustin-barberis-356535203/",
